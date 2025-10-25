@@ -21,7 +21,7 @@ const Index = () => {
       name: "THCOMERCIO",
       url: "https://thcomercio.com.br",
       logo: "https://thcomercio.com.br/logo.png",
-      description: "Soluções sob medida com atendimento rápido, processos simples e foco total no resultado.",
+      description: "Fabricante de peças e acessórios industriais: transportadores, proteções, dutos, sistemas de filtragem e produtos especiais.",
       telephone: "+5598996179713",
       address: [
         {

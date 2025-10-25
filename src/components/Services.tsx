@@ -1,45 +1,45 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import serviceCommercial from "@/assets/service-commercial.jpg";
-import serviceConsulting from "@/assets/service-consulting.jpg";
-import serviceGrowth from "@/assets/service-growth.jpg";
-import serviceTeam from "@/assets/service-team.jpg";
-import serviceSupport from "@/assets/service-support.jpg";
-import serviceCommunication from "@/assets/service-communication.jpg";
+import productTransportadores from "@/assets/product-transportadores.jpg";
+import productProtecoes from "@/assets/product-protecoes.jpg";
+import productDutos from "@/assets/product-dutos.jpg";
+import productFiltragem from "@/assets/product-filtragem.jpg";
+import productEspeciais from "@/assets/product-especiais.jpg";
+import productAcessorios from "@/assets/product-acessorios.jpg";
 
 const WHATSAPP_URL = "https://wa.me/5598996179713?text=Olá%20THCOMERCIO%2C%20vim%20pelo%20site.";
 
 export const Services = () => {
   const services = [
     {
-      image: serviceCommercial,
-      title: "Soluções Comerciais",
-      description: "Estratégias personalizadas para expandir seus negócios e alcançar novos mercados com segurança e eficiência.",
+      image: productTransportadores,
+      title: "Transportadores",
+      description: "Transportadores de cavacos, linha pesada, correias transportadoras de peças e caçambas. Sistemas automatizados para movimentação de materiais.",
     },
     {
-      image: serviceConsulting,
-      title: "Consultoria Empresarial",
-      description: "Orientação especializada para otimizar processos, reduzir custos e maximizar resultados do seu empreendimento.",
+      image: productProtecoes,
+      title: "Proteções",
+      description: "Proteções sanfonadas (fole sanfonado), proteções telescópicas, rolo cortina e esteiras de alumínio para máquinas industriais.",
     },
     {
-      image: serviceGrowth,
-      title: "Gestão e Crescimento",
-      description: "Planejamento estratégico focado no crescimento sustentável e na escalabilidade do seu negócio.",
+      image: productDutos,
+      title: "Dutos",
+      description: "Trombas de carregamento e dutos flexíveis para sistemas de ventilação e exaustão industrial.",
     },
     {
-      image: serviceTeam,
-      title: "Desenvolvimento de Equipes",
-      description: "Capacitação e treinamento para formar times de alta performance alinhados aos seus objetivos.",
+      image: productFiltragem,
+      title: "Sistema de Filtragem",
+      description: "Sistemas completos de filtragem industrial para limpeza de ar, separação de partículas e controle de poluição.",
     },
     {
-      image: serviceSupport,
-      title: "Suporte Contínuo",
-      description: "Acompanhamento dedicado para garantir que suas operações funcionem sem interrupções.",
+      image: productEspeciais,
+      title: "Produtos Especiais",
+      description: "Máquinas, peças e acessórios especiais produzidos sob medida pensando no aumento de produtividade da sua empresa.",
     },
     {
-      image: serviceCommunication,
-      title: "Atendimento Personalizado",
-      description: "Canal direto de comunicação para esclarecer dúvidas e atender demandas com agilidade.",
+      image: productAcessorios,
+      title: "Peças e Acessórios",
+      description: "Linha completa de peças de reposição e acessórios para manutenção e upgrade de equipamentos industriais.",
     },
   ];
 
@@ -49,10 +49,10 @@ export const Services = () => {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="section-title font-display">
             CONHEÇA NOSSA LINHA DE{" "}
-            <span className="gradient-text">SERVIÇOS</span>
+            <span className="gradient-text">PRODUTOS</span>
           </h2>
           <p className="section-subtitle">
-            Soluções completas e integradas produzidas pensando no aumento de produtividade da sua empresa
+            São máquinas, peças e acessórios especiais produzidos pensando no aumento de produtividade da sua empresa
           </p>
         </div>
 
@@ -71,14 +71,17 @@ export const Services = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60" />
+                
+                {/* Title overlay on image */}
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-2xl font-bold text-white group-hover:text-accent transition-colors">
+                    {service.title}
+                  </h3>
+                </div>
               </div>
               
               {/* Content */}
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
-                  {service.title}
-                </h3>
-                
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {service.description}
                 </p>
@@ -90,7 +93,7 @@ export const Services = () => {
                 >
                   <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="mr-2 h-4 w-4" />
-                    Solicitar orçamento
+                    Solicitar catálogo
                   </a>
                 </Button>
               </div>
@@ -100,7 +103,7 @@ export const Services = () => {
 
         <div className="mt-16 text-center">
           <p className="text-muted-foreground mb-6 text-lg">
-            Não encontrou o que procura? Fale conosco e vamos criar a solução ideal para você.
+            Precisa de um produto personalizado? Desenvolvemos soluções sob medida para sua necessidade.
           </p>
           <Button
             asChild
@@ -109,7 +112,7 @@ export const Services = () => {
           >
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="mr-2 h-5 w-5" />
-              Fale com nossa equipe
+              Fale com nossos especialistas
             </a>
           </Button>
         </div>

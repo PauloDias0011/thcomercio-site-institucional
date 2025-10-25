@@ -22,7 +22,7 @@ export const Footer = () => {
           <div className="space-y-4">
             <img src={logo} alt="THCOMERCIO" className="h-12 mb-4" />
             <p className="text-gray-400 leading-relaxed">
-              Soluções sob medida com atendimento rápido, processos simples e foco total no resultado.
+              Fabricante de peças e acessórios industriais com tecnologia de ponta e compromisso com a qualidade.
             </p>
             <p className="text-sm text-gray-500 font-mono">
               CNPJ: 32.351.204/0001-63

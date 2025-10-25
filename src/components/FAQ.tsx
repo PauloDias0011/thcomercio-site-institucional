@@ -7,28 +7,28 @@ export const FAQ = () => {
 
   const faqs = [
     {
-      question: "Qual é o prazo médio de atendimento?",
-      answer: "Nossa equipe responde em até 24 horas durante dias úteis. Para questões urgentes, entre em contato via WhatsApp e teremos prazer em atendê-lo com prioridade.",
+      question: "Qual é o prazo de entrega dos produtos?",
+      answer: "O prazo varia conforme o produto e quantidade. Itens de linha geralmente são entregues em 7 a 15 dias úteis. Para produtos especiais sob medida, o prazo é definido após análise do projeto. Entre em contato para um orçamento detalhado com prazos específicos.",
     },
     {
-      question: "Como funciona o processo de contratação?",
-      answer: "É muito simples! Entre em contato pelo WhatsApp, conte sobre sua necessidade, e nossa equipe preparará uma proposta personalizada. Sem burocracia, com transparência total em cada etapa.",
+      question: "Vocês fazem produtos personalizados?",
+      answer: "Sim! Desenvolvemos produtos especiais sob medida para atender necessidades específicas. Nossa equipe técnica analisa seu projeto e desenvolve a solução ideal. Entre em contato pelo WhatsApp com suas especificações.",
     },
     {
-      question: "Quais são as formas de pagamento aceitas?",
-      answer: "Trabalhamos com diversas modalidades: transferência bancária, PIX, boleto e parcelamento em cartão de crédito. Escolha a opção que melhor se adequa ao seu negócio.",
+      question: "Como funciona a garantia dos produtos?",
+      answer: "Todos os nossos produtos possuem garantia contra defeitos de fabricação. O período varia de acordo com o produto, mas geralmente é de 12 meses. Oferecemos suporte técnico durante e após o período de garantia.",
     },
     {
-      question: "Vocês oferecem garantia nos serviços?",
-      answer: "Sim! Todos os nossos serviços possuem garantia de qualidade. Trabalhamos até você ficar 100% satisfeito com o resultado. Seu sucesso é nossa prioridade.",
+      question: "Fazem instalação dos equipamentos?",
+      answer: "Sim, oferecemos serviço de instalação e comissionamento para garantir o perfeito funcionamento dos equipamentos. Nossa equipe técnica realiza a montagem e orienta sobre operação e manutenção.",
     },
     {
-      question: "Há suporte após a conclusão do projeto?",
-      answer: "Absolutamente! Oferecemos suporte contínuo para garantir que tudo funcione perfeitamente. Estamos sempre disponíveis para ajustes, melhorias e esclarecimentos.",
+      question: "Vocês fornecem catálogos técnicos?",
+      answer: "Sim! Disponibilizamos catálogos técnicos completos com especificações, dimensões e características de cada produto. Entre em contato pelo WhatsApp e informe qual categoria de produto você deseja conhecer.",
     },
     {
-      question: "Atendem empresas de todos os portes?",
-      answer: "Sim! Atendemos desde pequenos empreendedores até grandes empresas. Nossas soluções são personalizadas para o tamanho e necessidade específica de cada cliente.",
+      question: "Atendem todo o Brasil?",
+      answer: "Sim, atendemos todo o território nacional. Temos logística estruturada para entregas em qualquer região do país. Consulte as condições de frete para sua localidade.",
     },
   ];
 

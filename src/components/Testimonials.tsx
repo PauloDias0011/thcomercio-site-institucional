@@ -3,24 +3,24 @@ import { Star, Quote } from "lucide-react";
 export const Testimonials = () => {
   const testimonials = [
     {
-      name: "Carlos Eduardo Santos",
-      role: "Diretor Comercial",
-      company: "Empresa de Logística",
-      content: "A THCOMERCIO transformou completamente nossa operação. O atendimento é excepcional e os resultados superaram nossas expectativas. Recomendo de olhos fechados!",
+      name: "José Carlos Mendes",
+      role: "Gerente de Produção",
+      company: "Metalúrgica Industrial",
+      content: "Os transportadores da THCOMERCIO revolucionaram nossa linha de produção. Qualidade excepcional e suporte técnico impecável. Investimento que se paga rapidamente!",
       rating: 5,
     },
     {
-      name: "Mariana Oliveira Costa",
-      role: "CEO",
-      company: "Startup de Tecnologia",
-      content: "Profissionalismo e agilidade definem a THCOMERCIO. Eles entenderam nossa necessidade e entregaram exatamente o que precisávamos, no prazo e com qualidade impecável.",
+      name: "Ana Paula Rodrigues",
+      role: "Diretora de Operações",
+      company: "Indústria de Usinagem",
+      content: "Adquirimos o sistema completo de proteções para nossas máquinas CNC. Produto robusto, instalação perfeita e preço justo. A THCOMERCIO é nossa parceira de confiança.",
       rating: 5,
     },
     {
-      name: "Roberto Ferreira Lima",
-      role: "Gerente de Operações",
-      company: "Indústria",
-      content: "Parceria de verdade! A equipe da THCOMERCIO está sempre disponível e nos ajuda a resolver desafios complexos com soluções práticas e eficientes. Simplesmente excelente!",
+      name: "Ricardo Almeida Silva",
+      role: "Engenheiro de Manutenção",
+      company: "Fábrica de Componentes",
+      content: "Sistema de filtragem de altíssima qualidade! Reduziu drasticamente o tempo de manutenção preventiva. Equipe técnica sempre pronta para auxiliar. Recomendo!",
       rating: 5,
     },
   ];

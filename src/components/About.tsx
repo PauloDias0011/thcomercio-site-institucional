@@ -4,23 +4,23 @@ export const About = () => {
   const features = [
     {
       icon: <Zap className="h-6 w-6" />,
-      title: "Resposta Rápida",
-      description: "Atendimento ágil para não deixar seu negócio parado",
+      title: "Entrega Ágil",
+      description: "Produção otimizada para atender seus prazos com eficiência",
     },
     {
       icon: <Shield className="h-6 w-6" />,
-      title: "Transparência",
-      description: "Processos claros e comunicação honesta em cada etapa",
+      title: "Qualidade Certificada",
+      description: "Produtos testados e aprovados com rigoroso controle de qualidade",
     },
     {
       icon: <Target className="h-6 w-6" />,
-      title: "Foco em Resultados",
-      description: "Soluções eficazes alinhadas aos seus objetivos",
+      title: "Precisão Técnica",
+      description: "Especificações exatas para perfeito funcionamento",
     },
     {
       icon: <Building2 className="h-6 w-6" />,
-      title: "Suporte Dedicado",
-      description: "Equipe presente para acompanhar seu crescimento",
+      title: "Suporte Técnico",
+      description: "Equipe especializada para orientação e assistência",
     },
   ];
 
@@ -29,11 +29,13 @@ export const About = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="section-title font-display">
-            SOBRE A <span className="gradient-text">THCOMERCIO</span>
+            TECNOLOGIA E COMPROMISSO A FAVOR DA{" "}
+            <span className="gradient-text">QUALIDADE</span>
           </h2>
           <p className="section-subtitle">
-            A THCOMERCIO atua com excelência, unindo agilidade e confiabilidade para impulsionar seu negócio. 
-            Nossa missão é entregar soluções que fazem a diferença real no seu dia a dia.
+            A THCOMERCIO é referência em fabricação de peças e acessórios industriais, 
+            unindo tecnologia de ponta e know-how para entregar produtos que aumentam 
+            a produtividade e segurança das suas operações.
           </p>
           <div className="mt-6 inline-flex items-center space-x-2 text-sm text-muted-foreground">
             <Building2 className="h-4 w-4" />
@@ -65,10 +67,10 @@ export const About = () => {
         {/* Stats */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { value: "100%", label: "Comprometimento" },
-            { value: "24h", label: "Resposta média" },
-            { value: "10+", label: "Anos de experiência" },
-            { value: "500+", label: "Clientes atendidos" },
+            { value: "20+", label: "Anos de experiência" },
+            { value: "5000+", label: "Produtos entregues" },
+            { value: "98%", label: "Satisfação dos clientes" },
+            { value: "100%", label: "Fabricação nacional" },
           ].map((stat, index) => (
             <div key={index} className="text-center glass-card rounded-2xl p-6">
               <div className="text-4xl md:text-5xl font-display font-bold gradient-text mb-2">
@@ -77,6 +79,18 @@ export const About = () => {
               <p className="text-sm md:text-base text-muted-foreground">{stat.label}</p>
             </div>
           ))}
+        </div>
+
+        {/* Quality commitment */}
+        <div className="mt-16 glass-card rounded-3xl p-8 md:p-12 text-center">
+          <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+            Compromisso com a Excelência
+          </h3>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Investimos continuamente em tecnologia e capacitação para oferecer produtos 
+            que atendem às mais rigorosas normas técnicas e de segurança. Nossa missão 
+            é ser o parceiro ideal para o crescimento da sua indústria.
+          </p>
         </div>
       </div>
     </section>

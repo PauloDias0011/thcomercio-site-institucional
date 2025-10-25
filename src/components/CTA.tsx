@@ -18,19 +18,19 @@ export const CTA = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-6">
-            Pronto para começar?
+            Precisa de um Orçamento?
           </h2>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Não deixe seu negócio parado. Entre em contato agora e descubra como podemos 
-            impulsionar seus resultados com soluções personalizadas.
+            Entre em contato agora e receba uma proposta personalizada para os produtos 
+            que sua empresa precisa. Nossa equipe técnica está pronta para atender você.
           </p>
 
           {/* Benefits */}
           <div className="flex flex-wrap justify-center gap-6 mb-10">
             {[
-              "Atendimento imediato",
-              "Sem compromisso",
-              "Orçamento gratuito",
+              "Orçamento sem compromisso",
+              "Resposta em até 24h",
+              "Suporte técnico incluso",
             ].map((benefit, index) => (
               <div key={index} className="flex items-center space-x-2 text-white">
                 <CheckCircle className="h-5 w-5" />
@@ -48,7 +48,7 @@ export const CTA = () => {
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" />
-                Fale no WhatsApp agora
+                Solicitar orçamento agora
               </a>
             </Button>
             
@@ -67,7 +67,7 @@ export const CTA = () => {
 
           {/* Trust indicator */}
           <p className="mt-8 text-white/80 text-sm">
-            🔒 Seus dados estão seguros. Respeitamos sua privacidade.
+            🏭 Fabricação nacional com os mais altos padrões de qualidade
           </p>
         </div>
       </div>
