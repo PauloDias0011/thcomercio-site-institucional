@@ -11,10 +11,10 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-blue-50 via-white to-orange-50">
+    <div className="flex min-h-screen items-center justify-center bg-background">
       <div className="text-center px-4">
         <div className="mb-8">
-          <h1 className="text-8xl md:text-9xl font-display font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4">
+          <h1 className="text-8xl md:text-9xl font-display font-bold gradient-text mb-4">
             404
           </h1>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
@@ -33,7 +33,7 @@ const NotFound = () => {
             </Link>
           </Button>
           
-          <Button asChild size="lg" variant="outline" className="rounded-full px-8" onClick={() => window.history.back()}>
+          <Button asChild size="lg" variant="outline" className="rounded-full px-8 border-2" onClick={() => window.history.back()}>
             <button>
               <ArrowLeft className="mr-2 h-5 w-5" />
               Voltar

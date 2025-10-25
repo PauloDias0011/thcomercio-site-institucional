@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, ArrowRight } from "lucide-react";
+import { MessageCircle, ArrowRight, TrendingUp, Shield, Zap } from "lucide-react";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const WHATSAPP_URL = "https://wa.me/5598996179713?text=Olá%20THCOMERCIO%2C%20vim%20pelo%20site.";
 
@@ -7,99 +8,103 @@ export const Hero = () => {
   return (
     <section
       id="inicio"
-      className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden"
+      className="relative pt-32 pb-24 md:pt-40 md:pb-36 overflow-hidden min-h-[90vh] flex items-center"
+      style={{
+        backgroundImage: `linear-gradient(135deg, rgba(15, 23, 42, 0.97) 0%, rgba(15, 23, 42, 0.85) 100%), url(${heroBackground})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+      }}
     >
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-orange-50 -z-10" />
+      {/* Animated gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 animate-pulse opacity-30" />
       
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
-          <div className="space-y-8 animate-in fade-in slide-in-from-left duration-700">
-            <div className="inline-block">
-              <span className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
-                🚀 Soluções que impulsionam seu negócio
-              </span>
-            </div>
-            
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-tight">
-              Soluções sob medida com a{" "}
-              <span className="bg-gradient-to-r from-[hsl(var(--brand-blue))] to-[hsl(var(--brand-orange))] bg-clip-text text-transparent">
-                THCOMERCIO
-              </span>
-            </h1>
-            
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-              Atendimento rápido, processos simples e foco total no resultado. Transforme desafios em oportunidades com quem entende do seu negócio.
-            </p>
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="max-w-5xl mx-auto text-center">
+          {/* Badge */}
+          <div className="inline-block mb-8 animate-in fade-in slide-in-from-bottom-2 duration-700">
+            <span className="inline-flex items-center px-6 py-3 rounded-full glass-card text-primary text-sm font-medium shadow-lg">
+              <TrendingUp className="mr-2 h-4 w-4" />
+              Soluções que impulsionam seu negócio
+            </span>
+          </div>
+          
+          {/* Main heading */}
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight mb-8 animate-in fade-in slide-in-from-bottom-2 duration-700 delay-100">
+            MAIOR PARCEIRO EM{" "}
+            <span className="gradient-text block mt-2">
+              SOLUÇÕES COMERCIAIS
+            </span>
+          </h1>
+          
+          {/* Subtitle */}
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed animate-in fade-in slide-in-from-bottom-2 duration-700 delay-200">
+            A THCOMERCIO preza pela qualidade e agilidade, buscando sempre o melhor para o nosso parceiro e garantindo todo suporte e rapidez no atendimento.
+          </p>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                asChild
-                size="lg"
-                className="btn-primary rounded-full px-8 text-base"
-              >
-                <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  Fale no WhatsApp
-                </a>
-              </Button>
-              
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="rounded-full px-8 text-base border-2 hover:bg-primary/5"
-              >
-                <a href="#servicos">
-                  Conheça nossos serviços
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
-            </div>
-
-            {/* Trust Indicators */}
-            <div className="flex flex-wrap items-center gap-8 pt-4">
-              <div className="flex items-center space-x-2">
-                <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center">
-                  <span className="text-2xl">✓</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">Resposta Rápida</p>
-                  <p className="text-sm text-muted-foreground">Em horário comercial</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-2">
-                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
-                  <span className="text-2xl">🎯</span>
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground">Sem Burocracia</p>
-                  <p className="text-sm text-muted-foreground">Processos simples</p>
-                </div>
-              </div>
-            </div>
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-in fade-in slide-in-from-bottom-2 duration-700 delay-300">
+            <Button
+              asChild
+              size="lg"
+              className="btn-primary rounded-full px-10 py-7 text-lg font-semibold"
+            >
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-2 h-6 w-6" />
+                Fale no WhatsApp
+              </a>
+            </Button>
+            
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="rounded-full px-10 py-7 text-lg border-2 border-white/30 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm font-semibold"
+            >
+              <a href="#servicos">
+                Conheça nossos serviços
+                <ArrowRight className="ml-2 h-6 w-6" />
+              </a>
+            </Button>
           </div>
 
-          {/* Hero Image/Illustration */}
-          <div className="relative animate-in fade-in slide-in-from-right duration-700 delay-300">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl transform rotate-6 scale-105 blur-2xl" />
-              <div className="relative bg-white rounded-3xl shadow-2xl p-8 border border-border">
-                <div className="aspect-square bg-gradient-to-br from-primary via-secondary to-accent rounded-2xl flex items-center justify-center">
-                  <div className="text-center text-white space-y-4 p-8">
-                    <div className="text-6xl md:text-8xl font-display font-bold">TH</div>
-                    <p className="text-xl md:text-2xl font-semibold">COMERCIO</p>
-                    <p className="text-sm md:text-base opacity-90">Excelência em resultados</p>
-                  </div>
-                </div>
+          {/* Trust Indicators */}
+          <div className="flex flex-wrap justify-center gap-12 pt-8 animate-in fade-in slide-in-from-bottom-2 duration-700 delay-400">
+            <div className="flex items-center space-x-3">
+              <div className="h-14 w-14 rounded-2xl glass-card flex items-center justify-center shadow-lg">
+                <Zap className="h-7 w-7 text-accent" />
+              </div>
+              <div className="text-left">
+                <p className="font-bold text-white text-lg">Resposta Rápida</p>
+                <p className="text-sm text-gray-400">Em até 24 horas</p>
+              </div>
+            </div>
+            
+            <div className="flex items-center space-x-3">
+              <div className="h-14 w-14 rounded-2xl glass-card flex items-center justify-center shadow-lg">
+                <Shield className="h-7 w-7 text-primary" />
+              </div>
+              <div className="text-left">
+                <p className="font-bold text-white text-lg">Sem Burocracia</p>
+                <p className="text-sm text-gray-400">Processos simples</p>
+              </div>
+            </div>
+            
+            <div className="flex items-center space-x-3">
+              <div className="h-14 w-14 rounded-2xl glass-card flex items-center justify-center shadow-lg">
+                <TrendingUp className="h-7 w-7 text-secondary" />
+              </div>
+              <div className="text-left">
+                <p className="font-bold text-white text-lg">Resultados</p>
+                <p className="text-sm text-gray-400">Comprovados</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Decorative elements */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
   );
 };

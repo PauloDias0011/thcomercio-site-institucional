@@ -33,11 +33,11 @@ export const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-20 md:py-32 bg-white">
+    <section id="faq" className="py-20 md:py-32 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="section-title font-display">
-            Perguntas <span className="text-primary">Frequentes</span>
+            PERGUNTAS <span className="gradient-text">FREQUENTES</span>
           </h2>
           <p className="section-subtitle">
             Tire suas dúvidas sobre nossos serviços e atendimento
@@ -48,7 +48,7 @@ export const FAQ = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-card border border-border rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-md"
+              className="glass-card rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}

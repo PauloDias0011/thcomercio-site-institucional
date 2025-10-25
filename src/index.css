@@ -8,86 +8,60 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* THCOMERCIO Brand Colors - Extracted from logo */
-    --brand-blue: 203 100% 38%;
-    --brand-blue-dark: 203 100% 30%;
-    --brand-orange: 33 100% 60%;
-    --brand-yellow: 44 98% 54%;
+    /* THCOMERCIO Dark Theme - Modern & Professional */
+    --brand-blue: 203 100% 48%;
+    --brand-blue-dark: 203 100% 35%;
+    --brand-blue-light: 203 100% 60%;
+    --brand-orange: 33 100% 55%;
+    --brand-yellow: 44 98% 58%;
     
-    --background: 214 32% 98%;
-    --foreground: 214 55% 9%;
+    /* Dark Theme Base */
+    --background: 220 20% 8%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 214 55% 9%;
+    --card: 220 18% 12%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 214 55% 9%;
-
-    --primary: 203 100% 38%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 33 100% 60%;
-    --secondary-foreground: 0 0% 100%;
-
-    --muted: 214 20% 92%;
-    --muted-foreground: 214 15% 45%;
-
-    --accent: 44 98% 54%;
-    --accent-foreground: 214 55% 9%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 214 25% 88%;
-    --input: 214 25% 88%;
-    --ring: 203 100% 38%;
-
-    --radius: 0.75rem;
-
-    /* Gradients */
-    --gradient-brand: linear-gradient(135deg, hsl(var(--brand-blue)) 0%, hsl(var(--brand-blue-dark)) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(var(--brand-orange)) 0%, hsl(var(--brand-yellow)) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-blue)) 0%, hsl(var(--brand-orange)) 100%);
-    
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    --shadow-brand: 0 10px 30px -10px hsl(var(--brand-blue) / 0.3);
-    
-    /* Transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .dark {
-    --background: 214 55% 9%;
-    --foreground: 214 32% 98%;
-
-    --card: 214 50% 12%;
-    --card-foreground: 214 32% 98%;
-
-    --popover: 214 50% 12%;
-    --popover-foreground: 214 32% 98%;
+    --popover: 220 18% 12%;
+    --popover-foreground: 0 0% 98%;
 
     --primary: 203 100% 48%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 33 100% 65%;
-    --secondary-foreground: 214 55% 9%;
+    --secondary: 33 100% 55%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 214 30% 18%;
-    --muted-foreground: 214 15% 65%;
+    --muted: 220 15% 18%;
+    --muted-foreground: 220 10% 65%;
 
-    --accent: 44 98% 60%;
-    --accent-foreground: 214 55% 9%;
+    --accent: 44 98% 58%;
+    --accent-foreground: 220 20% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 30% 18%;
-    --input: 214 30% 18%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
     --ring: 203 100% 48%;
+
+    --radius: 0.75rem;
+
+    /* Dark Theme Gradients */
+    --gradient-brand: linear-gradient(135deg, hsl(var(--brand-blue)) 0%, hsl(var(--brand-blue-dark)) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--brand-orange)) 0%, hsl(var(--brand-yellow)) 100%);
+    --gradient-hero: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.8) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(220 18% 14%) 0%, hsl(220 18% 12%) 100%);
+    
+    /* Enhanced Shadows for Dark Theme */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.5);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+    --shadow-brand: 0 10px 40px -10px hsl(var(--brand-blue) / 0.6);
+    --shadow-glow: 0 0 30px hsl(var(--brand-blue) / 0.3);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -115,7 +89,7 @@ All colors MUST be HSL.
 
 @layer components {
   .btn-primary {
-    @apply bg-primary text-primary-foreground hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl;
+    @apply bg-primary text-primary-foreground hover:bg-[hsl(var(--brand-blue-light))] transition-all duration-300 shadow-lg hover:shadow-[var(--shadow-glow)];
   }
   
   .btn-secondary {
@@ -127,11 +101,19 @@ All colors MUST be HSL.
   }
   
   .section-subtitle {
-    @apply text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto;
+    @apply text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed;
   }
   
   .card-hover {
-    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    @apply transition-all duration-300 hover:shadow-[var(--shadow-brand)] hover:-translate-y-2;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-[hsl(var(--brand-blue-light))] via-[hsl(var(--brand-orange))] to-[hsl(var(--brand-yellow))] bg-clip-text text-transparent;
+  }
+  
+  .glass-card {
+    @apply bg-card/50 backdrop-blur-xl border border-border/50;
   }
 }
 

@@ -26,11 +26,11 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section id="depoimentos" className="py-20 md:py-32 bg-gradient-to-b from-gray-50 to-white">
+    <section id="depoimentos" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="section-title font-display">
-            O que dizem nossos <span className="text-primary">clientes</span>
+            O QUE DIZEM NOSSOS <span className="gradient-text">CLIENTES</span>
           </h2>
           <p className="section-subtitle">
             Depoimentos reais de quem confia na THCOMERCIO para crescer
@@ -41,7 +41,7 @@ export const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 border border-border card-hover relative"
+              className="glass-card rounded-3xl p-8 card-hover relative"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Quote icon */}
@@ -76,9 +76,9 @@ export const Testimonials = () => {
 
         {/* Trust badge */}
         <div className="mt-16 text-center">
-          <div className="inline-flex items-center space-x-2 bg-green-50 text-green-700 px-6 py-3 rounded-full border border-green-200">
-            <Star className="h-5 w-5 fill-green-600 text-green-600" />
-            <span className="font-semibold">Avaliação 5.0 de nossos clientes</span>
+          <div className="inline-flex items-center space-x-2 glass-card px-6 py-3 rounded-full">
+            <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+            <span className="font-semibold text-foreground">Avaliação 5.0 de nossos clientes</span>
           </div>
         </div>
       </div>

@@ -41,11 +41,11 @@ export const Highlights = () => {
   ];
 
   return (
-    <section id="destaques" className="py-20 md:py-32 bg-white">
+    <section id="destaques" className="py-20 md:py-32 bg-gradient-to-b from-muted/30 to-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="section-title font-display">
-            Nossos <span className="text-primary">Diferenciais</span>
+            NOSSOS <span className="gradient-text">DIFERENCIAIS</span>
           </h2>
           <p className="section-subtitle">
             O que nos torna a escolha ideal para impulsionar o seu negócio
@@ -56,7 +56,7 @@ export const Highlights = () => {
           {highlights.map((highlight, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-gray-50 to-white p-8 border border-border card-hover"
+              className="group relative overflow-hidden rounded-3xl glass-card p-8 card-hover"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="relative z-10">

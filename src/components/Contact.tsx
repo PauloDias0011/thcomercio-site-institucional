@@ -22,11 +22,11 @@ export const Contact = () => {
   ];
 
   return (
-    <section id="contato" className="py-20 md:py-32 bg-gradient-to-b from-white to-gray-50">
+    <section id="contato" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="section-title font-display">
-            Entre em <span className="text-primary">Contato</span>
+            ENTRE EM <span className="gradient-text">CONTATO</span>
           </h2>
           <p className="section-subtitle">
             Estamos prontos para atender você. Escolha a melhor forma de contato.
@@ -36,7 +36,7 @@ export const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Contact Info */}
           <div className="space-y-6">
-            <div className="bg-white rounded-2xl p-8 border border-border shadow-sm">
+            <div className="glass-card rounded-3xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-foreground mb-6">Fale Conosco</h3>
               
               {/* WhatsApp */}
@@ -83,7 +83,7 @@ export const Contact = () => {
             </div>
 
             {/* Company Info */}
-            <div className="bg-white rounded-2xl p-8 border border-border shadow-sm">
+            <div className="glass-card rounded-3xl p-8 shadow-lg">
               <h3 className="text-xl font-bold text-foreground mb-4">THCOMERCIO</h3>
               <p className="text-sm text-muted-foreground font-mono">
                 CNPJ: 32.351.204/0001-63
@@ -96,7 +96,7 @@ export const Contact = () => {
             {addresses.map((location, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl p-8 border border-border card-hover"
+                className="glass-card rounded-3xl p-8 card-hover"
               >
                 <div className="flex items-start space-x-4 mb-4">
                   <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -128,7 +128,7 @@ export const Contact = () => {
         </div>
 
         {/* Call to action */}
-        <div className="mt-16 text-center bg-gradient-to-r from-blue-50 to-orange-50 rounded-3xl p-12 max-w-4xl mx-auto border border-border">
+        <div className="mt-16 text-center glass-card rounded-3xl p-12 max-w-4xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-4">
             Prefere falar por WhatsApp?
           </h3>
