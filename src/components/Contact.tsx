@@ -12,13 +12,6 @@ export const Contact = () => {
       cep: "CEP 65090-300",
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Avenida+Principal+Maracujá+São+Luís+MA",
     },
-    {
-      name: "Unidade Centro",
-      address: "Rua São Judas Tadeu, Edifício Norte",
-      city: "São Luís - MA",
-      cep: "CEP 65090-300",
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Rua+São+Judas+Tadeu+Edifício+Norte+São+Luís+MA",
-    },
   ];
 
   return (
