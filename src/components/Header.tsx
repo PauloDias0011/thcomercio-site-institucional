@@ -12,6 +12,7 @@ export const Header = () => {
 
   const menuItems = [
     { label: "Início", href: "#inicio" },
+    { label: "Clientes", href: "#clientes" },
     { label: "Sobre", href: "#sobre" },
     { label: "Serviços", href: "#servicos" },
     { label: "Destaques", href: "#destaques" },
