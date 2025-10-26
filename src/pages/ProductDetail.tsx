@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { ArrowLeft, CheckCircle, Package, Shield, Truck, Filter, MessageCircle, Phone } from "lucide-react";
+import { RelatedProducts } from "@/components/RelatedProducts";
 
 const WHATSAPP_URL = "https://wa.me/5598996179713?text=Olá%20THCOMERCIO%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20produto%3A%20";
 
@@ -617,6 +618,12 @@ export const ProductDetail = () => {
           </div>
         </div>
       </div>
+
+      {/* Related Products */}
+      <RelatedProducts 
+        currentProductId={product.id} 
+        currentCategory={product.category} 
+      />
     </div>
   );
 };

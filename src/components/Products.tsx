@@ -295,7 +295,7 @@ export const Products = () => {
             <div className="text-sm text-muted-foreground">Clientes</div>
           </div>
           <div className="glass-card rounded-2xl p-6">
-            <div className="text-3xl font-bold text-primary mb-2">15+</div>
+            <div className="text-3xl font-bold text-primary mb-2">7+</div>
             <div className="text-sm text-muted-foreground">Anos</div>
           </div>
         </div>
