@@ -63,7 +63,7 @@ export const Testimonials = () => {
 
               {/* Author */}
               <div className="relative z-10">
-                <div className="h-12 w-12 rounded-full bg-gradient-to-br from-primary to-secondary mb-3 flex items-center justify-center text-white font-bold text-lg">
+                <div className="h-12 w-12 rounded-full bg-gradient-to-br from-[hsl(var(--brand-blue))] via-[hsl(var(--brand-orange))] to-[hsl(var(--brand-yellow))] mb-3 flex items-center justify-center text-white font-bold text-lg">
                   {testimonial.name.split(' ').map(n => n[0]).join('')}
                 </div>
                 <h4 className="font-bold text-foreground">{testimonial.name}</h4>

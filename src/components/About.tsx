@@ -51,7 +51,7 @@ export const About = () => {
               className="group glass-card rounded-2xl p-6 card-hover"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="h-14 w-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <div className="h-14 w-14 rounded-xl bg-gradient-to-br from-[hsl(var(--brand-blue))] via-[hsl(var(--brand-orange))] to-[hsl(var(--brand-yellow))] flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 {feature.icon}
               </div>
               <h3 className="text-lg font-bold text-foreground mb-2">

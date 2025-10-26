@@ -80,7 +80,7 @@ export const Highlights = () => {
         </div>
 
         {/* Call to action */}
-        <div className="mt-16 text-center bg-gradient-to-r from-primary to-secondary rounded-3xl p-12 text-white">
+        <div className="mt-16 text-center bg-gradient-to-r from-[hsl(var(--brand-blue))] via-[hsl(var(--brand-orange))] to-[hsl(var(--brand-yellow))] rounded-3xl p-12 text-white">
           <h3 className="text-3xl md:text-4xl font-display font-bold mb-4">
             Pronto para transformar seu negócio?
           </h3>
