@@ -279,26 +279,6 @@ export const Products = () => {
             </Button>
           </div>
         )}
-
-        {/* Statistics */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          <div className="glass-card rounded-2xl p-6">
-            <div className="text-3xl font-bold text-primary mb-2">12+</div>
-            <div className="text-sm text-muted-foreground">Produtos</div>
-          </div>
-          <div className="glass-card rounded-2xl p-6">
-            <div className="text-3xl font-bold text-primary mb-2">4</div>
-            <div className="text-sm text-muted-foreground">Categorias</div>
-          </div>
-          <div className="glass-card rounded-2xl p-6">
-            <div className="text-3xl font-bold text-primary mb-2">50+</div>
-            <div className="text-sm text-muted-foreground">Clientes</div>
-          </div>
-          <div className="glass-card rounded-2xl p-6">
-            <div className="text-3xl font-bold text-primary mb-2">7+</div>
-            <div className="text-sm text-muted-foreground">Anos</div>
-          </div>
-        </div>
       </div>
     </section>
   );

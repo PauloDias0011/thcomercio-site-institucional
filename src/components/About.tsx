@@ -1,4 +1,5 @@
 import { Building2, Shield, Zap, Target } from "lucide-react";
+import heroBackground from "@/assets/hero-industrial.jpg";
 
 export const About = () => {
   const features = [
@@ -27,6 +28,7 @@ export const About = () => {
   return (
     <section id="sobre" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
+        {/* Header Section */}
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="section-title font-display">
             TECNOLOGIA E COMPROMISSO A FAVOR DA{" "}
@@ -43,25 +45,68 @@ export const About = () => {
           </div>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="group glass-card rounded-2xl p-6 card-hover"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="h-14 w-14 rounded-xl bg-gradient-to-br from-[hsl(var(--brand-blue))] via-[hsl(var(--brand-orange))] to-[hsl(var(--brand-yellow))] flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                {feature.icon}
+        {/* Main Content with Image */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+          {/* Image Section */}
+          <div className="order-2 lg:order-1">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <img 
+                src={heroBackground} 
+                alt="Equipe THCOMERCIO trabalhando na fabricação de peças industriais" 
+                className="w-full h-[500px] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+              
+              {/* Overlay with company info */}
+              <div className="absolute bottom-6 left-6 right-6">
+                <div className="glass-card rounded-2xl p-6">
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    Fabricação Nacional
+                  </h3>
+                  <p className="text-white/90 text-sm">
+                    Equipe especializada trabalhando com tecnologia de ponta para entregar produtos de alta qualidade.
+                  </p>
+                </div>
               </div>
-              <h3 className="text-lg font-bold text-foreground mb-2">
-                {feature.title}
-              </h3>
-              <p className="text-muted-foreground">
-                {feature.description}
-              </p>
             </div>
-          ))}
+          </div>
+
+          {/* Content Section */}
+          <div className="order-1 lg:order-2">
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                  Nossa Equipe em Ação
+                </h3>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  Nossa equipe de profissionais altamente qualificados trabalha com dedicação 
+                  e precisão para garantir que cada produto atenda aos mais altos padrões de qualidade. 
+                  Utilizamos tecnologia de ponta e processos rigorosos de controle.
+                </p>
+              </div>
+
+              {/* Features Grid */}
+              <div className="grid grid-cols-2 gap-6">
+                {features.map((feature, index) => (
+                  <div
+                    key={index}
+                    className="group glass-card rounded-2xl p-6 card-hover"
+                    style={{ animationDelay: `${index * 100}ms` }}
+                  >
+                    <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-[hsl(var(--brand-blue))] via-[hsl(var(--brand-orange))] to-[hsl(var(--brand-yellow))] flex items-center justify-center text-white mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      {feature.icon}
+                    </div>
+                    <h4 className="text-base font-bold text-foreground mb-2">
+                      {feature.title}
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      {feature.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Stats */}
