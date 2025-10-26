@@ -7,7 +7,6 @@ export const Footer = () => {
   const menuLinks = [
     { label: "Início", href: "#inicio" },
     { label: "Sobre", href: "#sobre" },
-    { label: "Serviços", href: "#servicos" },
     { label: "Destaques", href: "#destaques" },
     { label: "Depoimentos", href: "#depoimentos" },
     { label: "FAQ", href: "#faq" },
