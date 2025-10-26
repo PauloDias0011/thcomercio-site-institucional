@@ -65,7 +65,7 @@ export const Contact = () => {
                   <h4 className="font-semibold text-foreground mb-1">Telefone</h4>
                   <p className="text-muted-foreground">
                     <a href="tel:+5598996179713" className="hover:text-primary transition-colors">
-                      +55 (98) 99617-9713
+                      +55 (98) 4141-4440
                     </a>
                   </p>
                   <p className="text-sm text-muted-foreground mt-1">

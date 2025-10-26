@@ -77,7 +77,6 @@ const Index = () => {
           <Clients />
           <Products />
           <About />
-          <Services />
           <Highlights />
           <Testimonials />
           <CTA />

@@ -58,7 +58,7 @@ export const Footer = () => {
                   className="flex items-start space-x-3 text-gray-400 hover:text-white transition-colors"
                 >
                   <MessageCircle className="h-5 w-5 flex-shrink-0 mt-0.5" />
-                  <span>+55 (98) 99617-9713</span>
+                  <span> +55 (98) 4141-4440</span>
                 </a>
               </li>
               <li>
@@ -84,13 +84,7 @@ export const Footer = () => {
                   São Luís - MA, CEP 65090-300
                 </span>
               </li>
-              <li className="flex items-start space-x-3 text-gray-400">
-                <MapPin className="h-5 w-5 flex-shrink-0 mt-0.5" />
-                <span>
-                  Rua São Judas Tadeu, Edifício Norte<br />
-                  São Luís - MA, CEP 65090-300
-                </span>
-              </li>
+             
             </ul>
           </div>
         </div>

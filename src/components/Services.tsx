@@ -48,11 +48,10 @@ export const Services = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="section-title font-display">
-            CONHEÇA NOSSA LINHA DE{" "}
-            <span className="gradient-text">PRODUTOS</span>
+            NOSSOS <span className="gradient-text">SERVIÇOS</span>
           </h2>
           <p className="section-subtitle">
-            São máquinas, peças e acessórios especiais produzidos pensando no aumento de produtividade da sua empresa
+            Soluções industriais completas para suas necessidades
           </p>
         </div>
 

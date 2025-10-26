@@ -61,7 +61,7 @@ export const Hero = () => {
               variant="outline"
               className="rounded-full px-10 py-7 text-lg border-2 border-white/30 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm font-semibold"
             >
-              <a href="#servicos">
+              <a href="#produtos">
                 Ver Linha de Produtos
                 <ArrowRight className="ml-2 h-6 w-6" />
               </a>
