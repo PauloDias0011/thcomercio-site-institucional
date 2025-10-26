@@ -39,7 +39,7 @@ export const Hero = () => {
           
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed animate-in fade-in slide-in-from-bottom-2 duration-700 delay-200">
-            A THCOMERCIO preza pela qualidade dos seus produtos buscando sempre o melhor para o nosso parceiro e garantindo todo suporte e rapidez no atendimento.
+            A T COMERCIO preza pela qualidade dos seus produtos buscando sempre o melhor para o nosso parceiro e garantindo todo suporte e rapidez no atendimento.
           </p>
 
           {/* CTA Buttons */}

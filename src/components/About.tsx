@@ -33,7 +33,7 @@ export const About = () => {
             <span className="gradient-text">QUALIDADE</span>
           </h2>
           <p className="section-subtitle">
-            A THCOMERCIO é referência em fabricação de peças e acessórios industriais, 
+            A T COMERCIO é referência em fabricação de peças e acessórios industriais, 
             unindo tecnologia de ponta e know-how para entregar produtos que aumentam 
             a produtividade e segurança das suas operações.
           </p>
@@ -67,7 +67,7 @@ export const About = () => {
         {/* Stats */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { value: "20+", label: "Anos de experiência" },
+            { value: "7+", label: "Anos de experiência" },
             { value: "5000+", label: "Produtos entregues" },
             { value: "98%", label: "Satisfação dos clientes" },
             { value: "100%", label: "Fabricação nacional" },
