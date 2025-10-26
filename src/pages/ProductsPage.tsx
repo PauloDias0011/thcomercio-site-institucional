@@ -6,6 +6,13 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { ArrowLeft, Package, Shield, Truck, Filter, Search } from "lucide-react";
 
+// Import product images
+import productDutos from "@/assets/product-dutos.jpg";
+import productProtecoes from "@/assets/product-protecoes.jpg";
+import productTransportadores from "@/assets/product-transportadores.jpg";
+import productFiltragem from "@/assets/product-filtragem.jpg";
+import productAcessorios from "@/assets/product-acessorios.jpg";
+
 export const ProductsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
@@ -25,7 +32,7 @@ export const ProductsPage = () => {
       name: "Trombas de Carregamento",
       category: "dutos",
       description: "Soluções eficientes para carregamento de materiais",
-      image: "/src/assets/product-dutos.jpg",
+      image: productDutos,
       features: ["Alta durabilidade", "Fácil instalação", "Resistente à corrosão"],
     },
     {
@@ -33,7 +40,7 @@ export const ProductsPage = () => {
       name: "Dutos Flexíveis",
       category: "dutos",
       description: "Flexibilidade e resistência para diversas aplicações",
-      image: "/src/assets/product-dutos.jpg",
+      image: productDutos,
       features: ["Flexibilidade total", "Resistente a produtos químicos", "Fácil manutenção"],
     },
 
@@ -43,7 +50,7 @@ export const ProductsPage = () => {
       name: "Proteções Sanfonadas (Fole Sanfonado)",
       category: "protecoes",
       description: "Proteção eficaz contra contaminação e acidentes",
-      image: "/src/assets/product-protecoes.jpg",
+      image: productProtecoes,
       features: ["Movimento suave", "Resistente ao desgaste", "Fácil instalação"],
     },
     {
@@ -51,7 +58,7 @@ export const ProductsPage = () => {
       name: "Proteções Telescópicas",
       category: "protecoes",
       description: "Proteção telescópica para movimentos lineares",
-      image: "/src/assets/product-protecoes.jpg",
+      image: productProtecoes,
       features: ["Movimento linear", "Alta precisão", "Baixa manutenção"],
     },
     {
@@ -59,7 +66,7 @@ export const ProductsPage = () => {
       name: "Rolo Cortina",
       category: "protecoes",
       description: "Sistema de proteção por cortina",
-      image: "/src/assets/product-protecoes.jpg",
+      image: productProtecoes,
       features: ["Proteção total", "Visibilidade mantida", "Instalação rápida"],
     },
     {
@@ -67,7 +74,7 @@ export const ProductsPage = () => {
       name: "Esteira de Alumínio",
       category: "protecoes",
       description: "Esteiras leves e resistentes em alumínio",
-      image: "/src/assets/product-protecoes.jpg",
+      image: productProtecoes,
       features: ["Leveza", "Resistência", "Não magnético"],
     },
 
@@ -77,7 +84,7 @@ export const ProductsPage = () => {
       name: "Transportadores de Cavacos",
       category: "transportadores",
       description: "Sistema eficiente para transporte de cavacos",
-      image: "/src/assets/product-transportadores.jpg",
+      image: productTransportadores,
       features: ["Alta capacidade", "Baixo consumo", "Manutenção simples"],
     },
     {
@@ -85,7 +92,7 @@ export const ProductsPage = () => {
       name: "Transportadores Linha Pesada",
       category: "transportadores",
       description: "Transportadores robustos para cargas pesadas",
-      image: "/src/assets/product-transportadores.jpg",
+      image: productTransportadores,
       features: ["Alta resistência", "Grande capacidade", "Durabilidade"],
     },
     {
@@ -93,7 +100,7 @@ export const ProductsPage = () => {
       name: "Correia Transportadora de Peças",
       category: "transportadores",
       description: "Transporte preciso de peças industriais",
-      image: "/src/assets/product-transportadores.jpg",
+      image: productTransportadores,
       features: ["Precisão", "Suavidade", "Controle de velocidade"],
     },
     {
@@ -101,7 +108,7 @@ export const ProductsPage = () => {
       name: "Caçambas",
       category: "transportadores",
       description: "Caçambas industriais para coleta e transporte",
-      image: "/src/assets/product-transportadores.jpg",
+      image: productTransportadores,
       features: ["Grande capacidade", "Resistência", "Fácil descarga"],
     },
 
@@ -111,7 +118,7 @@ export const ProductsPage = () => {
       name: "Sistema de Filtragem",
       category: "especiais",
       description: "Sistemas completos de filtragem industrial",
-      image: "/src/assets/product-filtragem.jpg",
+      image: productFiltragem,
       features: ["Alta eficiência", "Baixa manutenção", "Economia de energia"],
     },
     {
@@ -119,7 +126,7 @@ export const ProductsPage = () => {
       name: "Acessórios Industriais",
       category: "especiais",
       description: "Acessórios diversos para aplicações industriais",
-      image: "/src/assets/product-acessorios.jpg",
+      image: productAcessorios,
       features: ["Variedade", "Qualidade", "Compatibilidade"],
     }
   ];

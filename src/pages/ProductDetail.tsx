@@ -6,6 +6,13 @@ import { Separator } from "@/components/ui/separator";
 import { ArrowLeft, CheckCircle, Package, Shield, Truck, Filter, MessageCircle, Phone } from "lucide-react";
 import { RelatedProducts } from "@/components/RelatedProducts";
 
+// Import product images
+import productDutos from "@/assets/product-dutos.jpg";
+import productProtecoes from "@/assets/product-protecoes.jpg";
+import productTransportadores from "@/assets/product-transportadores.jpg";
+import productFiltragem from "@/assets/product-filtragem.jpg";
+import productAcessorios from "@/assets/product-acessorios.jpg";
+
 const WHATSAPP_URL = "https://wa.me/5598996179713?text=Olá%20THCOMERCIO%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20produto%3A%20";
 
 export const ProductDetail = () => {
@@ -19,7 +26,7 @@ export const ProductDetail = () => {
       category: "dutos",
       description: "Soluções eficientes para carregamento de materiais em processos industriais",
       longDescription: "As trombas de carregamento são equipamentos essenciais para o transporte eficiente de materiais granulares e líquidos em processos industriais. Desenvolvidas com materiais de alta qualidade, oferecem durabilidade e confiabilidade para operações contínuas.",
-      image: "/src/assets/product-dutos.jpg",
+      image: productDutos,
       features: [
         "Alta durabilidade e resistência à corrosão",
         "Fácil instalação e manutenção",
@@ -54,7 +61,7 @@ export const ProductDetail = () => {
       category: "dutos",
       description: "Flexibilidade e resistência para diversas aplicações industriais",
       longDescription: "Os dutos flexíveis são a solução ideal para aplicações que requerem movimento e flexibilidade. Fabricados com materiais de alta qualidade, garantem resistência química e mecânica para os mais diversos processos industriais.",
-      image: "/src/assets/product-dutos.jpg",
+      image: productDutos,
       features: [
         "Flexibilidade total com resistência mecânica",
         "Resistente a produtos químicos agressivos",
@@ -91,7 +98,7 @@ export const ProductDetail = () => {
       category: "protecoes",
       description: "Proteção eficaz contra contaminação e acidentes em máquinas",
       longDescription: "As proteções sanfonadas oferecem proteção completa para guias e eixos de máquinas-ferramentas, impedindo a entrada de contaminantes e garantindo a segurança dos operadores. Fabricadas com materiais de alta qualidade, proporcionam movimento suave e durabilidade excepcional.",
-      image: "/src/assets/product-protecoes.jpg",
+      image: productProtecoes,
       features: [
         "Movimento suave e silencioso",
         "Resistente ao desgaste e abrasão",
@@ -126,7 +133,7 @@ export const ProductDetail = () => {
       category: "protecoes",
       description: "Proteção telescópica para movimentos lineares de alta precisão",
       longDescription: "As proteções telescópicas são ideais para aplicações que requerem movimento linear com alta precisão. Fabricadas em aço carbono de alta qualidade, oferecem proteção robusta e confiável para guias e sistemas de movimento.",
-      image: "/src/assets/product-protecoes.jpg",
+      image: productProtecoes,
       features: [
         "Movimento linear preciso",
         "Alta resistência mecânica",
@@ -161,7 +168,7 @@ export const ProductDetail = () => {
       category: "protecoes",
       description: "Sistema de proteção por cortina para áreas de trabalho",
       longDescription: "O sistema de rolo cortina oferece proteção eficaz para áreas de trabalho, mantendo a visibilidade e facilitando o acesso. Ideal para separação de ambientes e proteção contra partículas e respingos.",
-      image: "/src/assets/product-protecoes.jpg",
+      image: productProtecoes,
       features: [
         "Proteção total com visibilidade",
         "Instalação rápida e simples",
@@ -196,7 +203,7 @@ export const ProductDetail = () => {
       category: "protecoes",
       description: "Esteiras leves e resistentes em alumínio para aplicações especiais",
       longDescription: "As esteiras de alumínio são ideais para aplicações que requerem leveza e resistência. Fabricadas em alumínio de alta qualidade, oferecem excelente resistência à corrosão e propriedades não magnéticas.",
-      image: "/src/assets/product-protecoes.jpg",
+      image: productProtecoes,
       features: [
         "Leveza excepcional",
         "Alta resistência à corrosão",
@@ -233,7 +240,7 @@ export const ProductDetail = () => {
       category: "transportadores",
       description: "Sistema eficiente para transporte de cavacos e resíduos",
       longDescription: "Os transportadores de cavacos são equipamentos essenciais para a remoção eficiente de resíduos de usinagem. Projetados para alta capacidade e baixo consumo energético, garantem operação contínua e confiável.",
-      image: "/src/assets/product-transportadores.jpg",
+      image: productTransportadores,
       features: [
         "Alta capacidade de transporte",
         "Baixo consumo energético",
@@ -268,7 +275,7 @@ export const ProductDetail = () => {
       category: "transportadores",
       description: "Transportadores robustos para cargas pesadas e aplicações industriais",
       longDescription: "Os transportadores de linha pesada são projetados para aplicações industriais que requerem alta capacidade e resistência. Fabricados com componentes robustos, garantem operação confiável mesmo em condições severas.",
-      image: "/src/assets/product-transportadores.jpg",
+      image: productTransportadores,
       features: [
         "Alta resistência mecânica",
         "Grande capacidade de carga",
@@ -303,7 +310,7 @@ export const ProductDetail = () => {
       category: "transportadores",
       description: "Transporte preciso de peças industriais com controle de velocidade",
       longDescription: "As correias transportadoras de peças são projetadas para transporte preciso e controlado de componentes industriais. Com sistemas de controle avançados, garantem posicionamento exato e fluxo contínuo na linha de produção.",
-      image: "/src/assets/product-transportadores.jpg",
+      image: productTransportadores,
       features: [
         "Transporte preciso e controlado",
         "Movimento suave e uniforme",
@@ -338,7 +345,7 @@ export const ProductDetail = () => {
       category: "transportadores",
       description: "Caçambas industriais para coleta e transporte de materiais",
       longDescription: "As caçambas industriais são equipamentos essenciais para coleta, armazenamento e transporte de materiais diversos. Projetadas para alta capacidade e facilidade de operação, garantem eficiência nos processos industriais.",
-      image: "/src/assets/product-transportadores.jpg",
+      image: productTransportadores,
       features: [
         "Grande capacidade de armazenamento",
         "Alta resistência estrutural",
@@ -375,7 +382,7 @@ export const ProductDetail = () => {
       category: "especiais",
       description: "Sistemas completos de filtragem industrial de alta eficiência",
       longDescription: "Os sistemas de filtragem industrial são projetados para remoção eficiente de contaminantes em processos industriais. Com tecnologia avançada e componentes de alta qualidade, garantem qualidade do produto final e proteção dos equipamentos.",
-      image: "/src/assets/product-filtragem.jpg",
+      image: productFiltragem,
       features: [
         "Alta eficiência de filtragem",
         "Baixa necessidade de manutenção",
@@ -410,7 +417,7 @@ export const ProductDetail = () => {
       category: "especiais",
       description: "Acessórios diversos para aplicações industriais especializadas",
       longDescription: "Nossa linha de acessórios industriais inclui uma ampla variedade de componentes e peças para aplicações especializadas. Fabricados com materiais de alta qualidade e seguindo padrões internacionais, garantem compatibilidade e confiabilidade.",
-      image: "/src/assets/product-acessorios.jpg",
+      image: productAcessorios,
       features: [
         "Ampla variedade de produtos",
         "Alta qualidade dos materiais",

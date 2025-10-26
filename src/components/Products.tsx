@@ -5,6 +5,13 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Package, Shield, Truck, Filter } from "lucide-react";
 import { Link } from "react-router-dom";
 
+// Import product images
+import productDutos from "@/assets/product-dutos.jpg";
+import productProtecoes from "@/assets/product-protecoes.jpg";
+import productTransportadores from "@/assets/product-transportadores.jpg";
+import productFiltragem from "@/assets/product-filtragem.jpg";
+import productAcessorios from "@/assets/product-acessorios.jpg";
+
 export const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
@@ -23,7 +30,7 @@ export const Products = () => {
       name: "Trombas de Carregamento",
       category: "dutos",
       description: "Soluções eficientes para carregamento de materiais",
-      image: "/src/assets/product-dutos.jpg",
+      image: productDutos,
       features: ["Alta durabilidade", "Fácil instalação", "Resistente à corrosão"],
       specifications: {
         material: "Aço carbono",
@@ -36,7 +43,7 @@ export const Products = () => {
       name: "Dutos Flexíveis",
       category: "dutos",
       description: "Flexibilidade e resistência para diversas aplicações",
-      image: "/src/assets/product-dutos.jpg",
+      image: productDutos,
       features: ["Flexibilidade total", "Resistente a produtos químicos", "Fácil manutenção"],
       specifications: {
         material: "Aço inoxidável",
@@ -51,7 +58,7 @@ export const Products = () => {
       name: "Proteções Sanfonadas (Fole Sanfonado)",
       category: "protecoes",
       description: "Proteção eficaz contra contaminação e acidentes",
-      image: "/src/assets/product-protecoes.jpg",
+      image: productProtecoes,
       features: ["Movimento suave", "Resistente ao desgaste", "Fácil instalação"],
       specifications: {
         material: "PVC reforçado",
@@ -64,7 +71,7 @@ export const Products = () => {
       name: "Proteções Telescópicas",
       category: "protecoes",
       description: "Proteção telescópica para movimentos lineares",
-      image: "/src/assets/product-protecoes.jpg",
+      image: productProtecoes,
       features: ["Movimento linear", "Alta precisão", "Baixa manutenção"],
       specifications: {
         material: "Aço carbono",
@@ -77,7 +84,7 @@ export const Products = () => {
       name: "Rolo Cortina",
       category: "protecoes",
       description: "Sistema de proteção por cortina",
-      image: "/src/assets/product-protecoes.jpg",
+      image: productProtecoes,
       features: ["Proteção total", "Visibilidade mantida", "Instalação rápida"],
       specifications: {
         material: "PVC transparente",
@@ -90,7 +97,7 @@ export const Products = () => {
       name: "Esteira de Alumínio",
       category: "protecoes",
       description: "Esteiras leves e resistentes em alumínio",
-      image: "/src/assets/product-protecoes.jpg",
+      image: productProtecoes,
       features: ["Leveza", "Resistência", "Não magnético"],
       specifications: {
         material: "Alumínio 6061",
@@ -105,7 +112,7 @@ export const Products = () => {
       name: "Transportadores de Cavacos",
       category: "transportadores",
       description: "Sistema eficiente para transporte de cavacos",
-      image: "/src/assets/product-transportadores.jpg",
+      image: productTransportadores,
       features: ["Alta capacidade", "Baixo consumo", "Manutenção simples"],
       specifications: {
         capacidade: "Até 500 kg/h",
@@ -118,7 +125,7 @@ export const Products = () => {
       name: "Transportadores Linha Pesada",
       category: "transportadores",
       description: "Transportadores robustos para cargas pesadas",
-      image: "/src/assets/product-transportadores.jpg",
+      image: productTransportadores,
       features: ["Alta resistência", "Grande capacidade", "Durabilidade"],
       specifications: {
         capacidade: "Até 2000 kg/h",
@@ -131,7 +138,7 @@ export const Products = () => {
       name: "Correia Transportadora de Peças",
       category: "transportadores",
       description: "Transporte preciso de peças industriais",
-      image: "/src/assets/product-transportadores.jpg",
+      image: productTransportadores,
       features: ["Precisão", "Suavidade", "Controle de velocidade"],
       specifications: {
         precisao: "±0.5mm",
@@ -144,7 +151,7 @@ export const Products = () => {
       name: "Caçambas",
       category: "transportadores",
       description: "Caçambas industriais para coleta e transporte",
-      image: "/src/assets/product-transportadores.jpg",
+      image: productTransportadores,
       features: ["Grande capacidade", "Resistência", "Fácil descarga"],
       specifications: {
         capacidade: "0.5 a 5 m³",
@@ -159,7 +166,7 @@ export const Products = () => {
       name: "Sistema de Filtragem",
       category: "especiais",
       description: "Sistemas completos de filtragem industrial",
-      image: "/src/assets/product-filtragem.jpg",
+      image: productFiltragem,
       features: ["Alta eficiência", "Baixa manutenção", "Economia de energia"],
       specifications: {
         eficiencia: "99.9%",
@@ -172,7 +179,7 @@ export const Products = () => {
       name: "Acessórios Industriais",
       category: "especiais",
       description: "Acessórios diversos para aplicações industriais",
-      image: "/src/assets/product-acessorios.jpg",
+      image: productAcessorios,
       features: ["Variedade", "Qualidade", "Compatibilidade"],
       specifications: {
         aplicacao: "Universal",
